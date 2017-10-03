@@ -105,6 +105,7 @@ AUTH_PASSWORD_VALIDATORS = [
 CRONJOBS = [
     ('59 23 * * *', 'usersearch.crontab.run_cron_every_day'),
     ('59 23 * * 0', 'usersearch.crontab.run_cron_every_sunday'),
+    ('59 23 1 * *', 'usersearch.crontab.run_cron_every_month'),
 ]
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
